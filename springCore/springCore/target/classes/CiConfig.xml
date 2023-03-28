@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.springCore.Constructor.Certificate" name="certi">
+	<constructor-arg value="google"></constructor-arg>
+</bean>
+
+<bean class="com.springCore.Constructor.Person" name="Person">
+	<constructor-arg value="Sudhanshu" type="String"/>
+	<constructor-arg value="10" type="int" />
+	<constructor-arg ref="certi"/>
+</bean>
+</beans>
